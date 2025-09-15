@@ -1,2 +1,2 @@
-# Encriptaci-n
+# Encriptacion
 trabajo para pedro
