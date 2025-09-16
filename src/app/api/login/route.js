@@ -1,10 +1,10 @@
-// src/app/api/login/route.js
 import { NextResponse } from "next/server";
 import { getPool } from "@/lib/db";
 
 export async function POST(req) {
     try {
         const { user, pwd } = await req.json();
+        //Validación de si falta usuario o contraseña
         if (!user || !pwd) {
             return NextResponse.json({ ok: false, error: "Faltan campos" }, { status: 400 });
         }
